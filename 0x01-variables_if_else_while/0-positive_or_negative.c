@@ -29,7 +29,7 @@ printf("is negative\n");
 }
 else
 {
-prinf("is zero\n");
+printf("is zero\n");
 }
 
 return (0);
