@@ -3,9 +3,13 @@
 #include <time.h>
 
 /**
- *This is an if_if else program
- *another on here
-*/
+ *main entry point of the program
+ *
+ *This program assigns a random number to var n
+ *and prints whether the number in n is posotove or negative
+ *
+ *returns 0 on successful completion
+ */
 int main(void)
 {
 int n;
@@ -13,9 +17,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-printf("enter a number: ");
-scanf("%d", &n);
-printf("the number is %d ", n);
+printf(" %d\n", n);
 
 if (n > 0)
 {
@@ -27,8 +29,8 @@ printf("is negative\n");
 }
 else
 {
-printf("zero\n");
+prinf("is zero\n");
 }
-return (0);
 
+return (0);
 }
