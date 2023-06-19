@@ -3,13 +3,13 @@
 #include <time.h>
 
 /**
- *main entry point of the program
- *
- *This program assigns a random number to var n
- *and prints whether the number in n is posotove or negative
- *
- *returns 0 on successful completion
- */
+*main - entry point of the program
+*
+*Description: This program assigns a random number to var n
+*and prints whether the number in n is posotove or negative
+*
+*Return: 0 on successful completion
+*/
 int main(void)
 {
 int n;
