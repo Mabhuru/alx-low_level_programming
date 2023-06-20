@@ -17,7 +17,7 @@ while (singleDigit < 10)
 printf("%d", singleDigit);
 singleDigit++;
 }
-
+printf("\n");
 return (0);
 
 }
