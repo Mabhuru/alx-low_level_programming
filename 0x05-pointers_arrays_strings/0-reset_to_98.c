@@ -1,11 +1,13 @@
-void reset_to_98(int *n)
+#include "main.h"
+
 /**
- * updateValueTo98 - Updates the value pointed to by ptr to 98.
- * @ptr: Pointer to an int.
+ * reset_to_98 - Updates the value pointed to by n to 98.
+ * @n: Pointer to an int.
  *
- * Description: This function updates the value pointed to by ptr
+ * Description: This function updates the value pointed to by n
  *              to 98.
  */
+void reset_to_98(int *n)
 {
 	*n = 98;
 }
