@@ -1,4 +1,4 @@
-void reset_to_98(int *n);
+void reset_to_98(int *n)
 /**
  * updateValueTo98 - Updates the value pointed to by ptr to 98.
  * @ptr: Pointer to an int.
@@ -7,5 +7,5 @@ void reset_to_98(int *n);
  *              to 98.
  */
 {
-	*ptr = 98;
+	*n = 98;
 }
