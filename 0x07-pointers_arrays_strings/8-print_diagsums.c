@@ -1,21 +1,25 @@
 #include "main.h"
-#include <unistd.h>
-
+#include  <stdio.h>
 /**
- * print_chessboard - print chessboard given set 2D array
- * @a: 2D array
+ *print_diagsums -  prints the sum of the two
+ *	 diagonals of a square matrix of integers
+ *
+ *@a: parameter
+ *@size: parameter
+ *Return: nothing
  */
 
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
+	int l = 0;
+	int t1 = 0;
+	int t2 = 0;
 
-	int row;
-	int column;
-
-	for (row = 0; row < 8; row++)
+	for (; l < size; l++)
 	{
-		for (column = 0; column < 8; column++)
-			_putchar(a[row][column]);
-		_putchar('\n');
+		t1 += a[l * size + l];
+		t2 += a[l * size + (size - l - 1)];
 	}
+
+	printf("%d, %d\n", t1, t2);
 }
